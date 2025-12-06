@@ -1,0 +1,12 @@
+diff --git a/init/main.c b/init/main.c
+index 821df1f05..47695ecc7 100644
+--- a/init/main.c
++++ b/init/main.c
+@@ -914,6 +914,7 @@ static void __init early_numa_node_init(void)
+ asmlinkage __visible __init __no_sanitize_address __noreturn __no_stack_protector
+ void start_kernel(void)
+ {
++	pr_info("custom kernel made by Nunj\n");
+ 	char *command_line;
+ 	char *after_dashes;
+ 
